@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2App.PageDatosPersona">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Consulta Persona" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="{Binding Nombre}" x:Name="lbNombre" FontSize="Title" Padding="10,0,0,0"/>
+            <Label Text="{Binding Apellido}" x:Name="lbApellido" FontSize="Title" Padding="10,0,0,0"/>
+            <Label Text="{Binding Edad}" x:Name="lbEdad" FontSize="Title" Padding="10,0,0,0"/>
+            <Label Text="{Binding Correo}" x:Name="lbCorreo" FontSize="Title" Padding="10,0,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

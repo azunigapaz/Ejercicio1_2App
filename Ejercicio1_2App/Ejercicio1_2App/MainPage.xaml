@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2App.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Registro de personas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Nombre" FontSize="Title" Padding="10,0,0,0"/>
+        <Entry Keyboard="Text" Placeholder="Ingrese el nombre" VerticalOptions="CenterAndExpand" x:Name="txtNombre" Margin="10,0,10,0"/>
+
+        <Label Text="Apellido" FontSize="Title" Padding="10,0,0,0"/>
+        <Entry Keyboard="Text" Placeholder="Ingrese el apellido" VerticalOptions="CenterAndExpand" x:Name="txtApellido" Margin="10,0,10,0"/>
+
+        <Label Text="Edad" FontSize="Title" Padding="10,0,0,0"/>
+        <Entry Keyboard="Numeric" Placeholder="Ingrese la edad" VerticalOptions="CenterAndExpand" x:Name="txtEdad" Margin="10,0,10,0"/>
+
+        <Label Text="Correo" FontSize="Title" Padding="10,0,0,0"/>
+        <Entry Keyboard="Text" Placeholder="Ingrese el correo" VerticalOptions="CenterAndExpand" x:Name="txtCorreo" Margin="10,0,10,0"/>
+
+        <Button Text="Enviar datos" x:Name="btnEnviarDatos" Clicked="btnEnviarDatos_Clicked" Margin="10,0,10,50" />
+
+
+    </StackLayout>
+
+</ContentPage>
